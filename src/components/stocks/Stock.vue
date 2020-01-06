@@ -22,9 +22,7 @@
             quantity <= 0 ||
             !Number.isInteger(quantity)
         "
-      >
-        {{ insufficientFunds ? "Low Funds" : "Buy" }}
-      </button>
+      >{{ insufficientFunds ? "Low Funds" : "Buy" }}</button>
     </div>
   </div>
 </template>

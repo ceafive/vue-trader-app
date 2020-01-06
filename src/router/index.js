@@ -1,7 +1,6 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-
-import Home from "../components/Home";
+import Home from "../views/Home";
 
 Vue.use(VueRouter);
 
@@ -16,14 +15,14 @@ const routes = [
     name: "portfolio",
     component: () =>
       import(
-        /* webpackChunkName: "portfolio" */ "../components/portfolio/Portfolio.vue"
+        /* webpackChunkName: "portfolio" */ "../views/Portfolio"
       )
   },
   {
     path: "/stocks",
     name: "stocks",
     component: () =>
-      import(/* webpackChunkName: "stocks" */ "../components/stocks/Stocks.vue")
+      import(/* webpackChunkName: "stocks" */ "../views/Stocks")
   }
 ];
 

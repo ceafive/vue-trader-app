@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Stock from "./Stock.vue";
+import Stock from "../components/portfolio/Stock.vue";
 
 export default {
   computed: {

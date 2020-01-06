@@ -3,9 +3,9 @@
     <div class="bg-appGreen1 text-white p-4 rounded-t-lg">
       <h3>
         {{ stock.name }}
-        <span class="text-xs"
-          >(Price: {{ stock.price }} | Quantity: {{ stock.quantity }})</span
-        >
+        <span
+          class="text-xs"
+        >(Price: {{ stock.price }} | Quantity: {{ stock.quantity }})</span>
       </h3>
     </div>
     <div class="flex m-2">
@@ -24,9 +24,7 @@
             quantity <= 0 ||
             !Number.isInteger(quantity)
         "
-      >
-        {{ insufficientQuantity ? "Low Stocks" : "Sell" }}
-      </button>
+      >{{ insufficientQuantity ? "Low Stocks" : "Sell" }}</button>
     </div>
   </div>
 </template>
